@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================= -->
+  <!-- EDIT: Browser tab title                                       -->
+  <!-- ============================================================= -->
+  <title>Conny Naro | Portfolio</title>
+
+  <!-- Google Fonts: Space Grotesk (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="layout">
+
+    <!-- ========================================================= -->
+    <!-- LEFT SIDEBAR — PROFILE CARD                                -->
+    <!-- ========================================================= -->
+    <aside class="sidebar card">
+
+      <div class="profile">
+        <!-- EDIT: Profile photo.-->
+        <img src="assets/Conny.jpg" alt="Conny Naro" class="avatar" />
+        </div>
+
+        <!-- EDIT: Your full name -->
+        <h1 class="profile__name">Conny Naro</h1>
+
+        <!-- EDIT: Your role / title -->
+        <p class="profile__role">Mathematics Student · Data Analyst &amp; Research Enthusiast</p>
+      </div>
+
+      <!-- EDIT: CV link. Put your file in this repo (e.g. assets/CV.pdf)
+           or paste a Google Drive / external link in href below. -->
+      <a class="btn-cv" href="assets/CV.pdf" target="_blank" rel="noopener">
+        <i class="fa-regular fa-file-lines"></i>
+        <span>View CV</span>
+      </a>
+
+      <hr class="divider" />
+
+      <!-- Contact information -->
+      <ul class="contact">
+        <li>
+          <span class="contact__icon"><i class="fa-regular fa-envelope"></i></span>
+          <div class="contact__text">
+            <span class="contact__label">Email</span>
+            <!-- EDIT: Email -->
+            <a href="mailto:connynaro@gmail.com">connynaro@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon"><i class="fa-solid fa-phone"></i></span>
+          <div class="contact__text">
+            <span class="contact__label">Phone</span>
+            <!-- EDIT: Phone -->
+            <a href="tel:+6285121322457">+62 851 2132 2457</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+          <div class="contact__text">
+            <span class="contact__label">Location</span>
+            <!-- EDIT: Location -->
+            <span>Bandung, Indonesia</span>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon"><i class="fa-regular fa-clock"></i></span>
+          <div class="contact__text">
+            <span class="contact__label">Timezone</span>
+            <!-- EDIT: Timezone -->
+            <span>GMT+7</span>
+          </div>
+        </li>
+      </ul>
+
+      <hr class="divider" />
+
+      <!-- Social links -->
+      <div class="socials">
+        <!-- EDIT: GitHub link -->
+        <a href="https://github.com/connynaro" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <!-- EDIT: LinkedIn link -->
+        <a href="https://linkedin.com/in/connysipahutar" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ========================================================= -->
+    <!-- RIGHT MAIN CONTENT                                         -->
+    <!-- ========================================================= -->
+    <section class="content card">
+
+      <!-- Main navigation tabs -->
+      <nav class="tabs" aria-label="Main sections">
+        <button class="tab is-active" data-tab="about">About Me</button>
+        <button class="tab" data-tab="projects">Projects</button>
+        <button class="tab" data-tab="additional">Additional</button>
+      </nav>
+
+      <!-- ===================== ABOUT ME PANEL ===================== -->
+      <div class="panel is-active" id="panel-about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <!-- EDIT: About paragraph -->
+        <p class="lead">
+          I am a Mathematics student with a strong interest in data analysis, 
+          business strategy, and economic research. I enjoy turning
+          complex data into clear insights and structured recommendations. Through
+          academic projects, organizational experience, and internships, I have built
+          an interest in using analytical thinking to support decision-making across
+          finance, research, and consulting.
+        </p>
+
+        <!-- ================= RESUME TIMELINE ================= -->
+        <!-- Internship / Organization / Education as a clean vertical timeline.
+             To edit: change the eyebrow, org, role, date, and description text. -->
+        <div class="timeline">
+
+          <!-- EDIT: Internship -->
+          <div class="timeline__item">
+            <span class="timeline__eyebrow"><i class="fa-solid fa-briefcase"></i> Internship Experience</span>
+            <div class="timeline__row">
+              <h3 class="timeline__org">BRI Danareksa Sekuritas</h3>
+              <span class="timeline__date">Jul 2025 – Sep 2025</span>
+            </div>
+            <p class="timeline__role">Economic and Fixed Income Research Intern</p>
+            <p class="timeline__desc">Supported macroeconomic research, fixed income market updates, data collection, and market-related analysis.</p>
+          </div>
+
+          <!-- EDIT: Organization -->
+          <div class="timeline__item">
+              <span class="timeline__eyebrow">
+                <i class="fa-solid fa-users"></i> ORGANIZATION EXPERIENCE
+              </span>
+
+          <!-- Organization 1 -->
+          <div class="experience-entry">
+            <div class="timeline__row">
+              <h3 class="timeline__org">Himpunan Mahasiswa Matematika dan Aktuaria (HIMATIKA ITB)</h3>
+              <span class="timeline__date">Nov 2023 — Feb 2026</span>
+            </div>
+            <p class="timeline__role">Communication and Information Media Staff</p>
+            <p class="timeline__desc">
+              Supported digital content strategy and publication by creating engaging social media content, and publishing insights across Instagram, LinkedIn, and Medium
+            </p>
+          </div>
+
+          <!-- Organization 2 -->
+          <div class="experience-entry">
+            <div class="timeline__row">
+              <h3 class="timeline__org">Kelompok Studi Ekonomi dan Pasar Modal ITB (KSEP ITB)</h3>
+              <span class="timeline__date">Dec 2022 — Mar 2024</span>
+            </div>
+            <p class="timeline__role">Research and Development Curriculum Staff</p>
+            <p class="timeline__desc">
+              Contributed to curriculum development, capital market learning materials, and research discussions
+            </p>
+          </div>
+
+
+            <!-- <span class="timeline__eyebrow"><i class="fa-solid fa-users"></i> Organization Experience</span>
+            <div class="timeline__row">
+              <h3 class="timeline__org">Kelompok Studi Ekonomi dan Pasar Modal ITB (KSEP ITB)</h3>
+              <span class="timeline__date">Dec 2022 – Mar 2024</span>
+            </div>
+            <p class="timeline__role">Research and Development Curriculum Staff</p>
+            <p class="timeline__desc">Contributed to curriculum development, capital market learning materials, and research discussions.</p> -->
+          </div>
+
+          <!-- EDIT: Education -->
+          <div class="timeline__item">
+            <span class="timeline__eyebrow"><i class="fa-solid fa-graduation-cap"></i> Education</span>
+            <div class="timeline__row">
+              <h3 class="timeline__org">Institut Teknologi Bandung</h3>
+            </div>
+            <p class="timeline__role">Mathematics Undergraduate</p>
+            <p class="timeline__desc">Studying mathematics with interests in data analysis and economic research.</p>
+          </div>
+        </div>
+
+        <!-- ============ AWARDS + CERTIFICATION TOGGLE CARDS ============ -->
+        <!-- Two clickable cards. Each opens its own pop-out below.
+             Only ONE pop-out can be open at a time (handled in script.js). -->
+        <div class="toggle-cards">
+
+          <!-- Awards card -->
+          <article class="toggle-card" data-panel="awards"
+                   role="button" tabindex="0" aria-expanded="false" aria-controls="panel-awards">
+            <span class="toggle-card__icon"><i class="fa-solid fa-trophy"></i></span>
+            <div class="toggle-card__text">
+              <h3>Awards</h3>
+              <p>Competitions and achievements</p>
+            </div>
+            <span class="toggle-card__arrow"><i class="fa-solid fa-chevron-down"></i></span>
+          </article>
+
+          <!-- Certification card -->
+          <article class="toggle-card" data-panel="certs"
+                   role="button" tabindex="0" aria-expanded="false" aria-controls="panel-certs">
+            <span class="toggle-card__icon"><i class="fa-solid fa-certificate"></i></span>
+            <div class="toggle-card__text">
+              <h3>Certification</h3>
+              <p>Courses and learning milestones</p>
+            </div>
+            <span class="toggle-card__arrow"><i class="fa-solid fa-chevron-down"></i></span>
+          </article>
+        </div>
+
+        <!-- ================= AWARDS POP-OUT ================= -->
+        <!-- EDIT / ADD awards: copy one .accordion-item block and change the text + link. -->
+        <div class="popout" id="panel-awards" data-section="awards">
+          <div class="popout__inner">
+
+            <!-- Award item -->
+            <div class="accordion-item">
+              <button class="accordion-head" aria-expanded="false">
+                <span class="accordion-title">1st place in Milliman Insurance Innovation Challenge 2025 </span>
+                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <p class="accordion-meta">Milliman Insurance Innovation Challenge (International Level) · 2025</p>
+                  <p> Blue Valley Team </p>
+                  <!-- EDIT: proof link -->
+                  <a class="link-pill" href="https://www.actuaries.asn.au/research-analysis/innovation-challenge-2025-insurance-solutions-for-young-people-in-asia-pacific" target="_blank" rel="noopener">
+                    View Proof <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Award item -->
+            <div class="accordion-item">
+              <button class="accordion-head" aria-expanded="false">
+                <span class="accordion-title">2nd place in Indonesia NTU-GAIP Insurance Innovation Competition 2025</span>
+                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <p class="accordion-meta">NTU-Global Asia Insurance Partnership (National Level) · 2025</p>
+                  <p> Blue Valley Team </p>
+                  <!-- EDIT: proof link -->
+                  <a class="link-pill" href="https://www.linkedin.com/posts/connysipahutar_gaip2025-insuranceinnovation-gratitude-activity-7350432588299202561-EdHp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3rVggBhAlfe_yv_JBJTZn5TxK2h1GUTnM" target="_blank" rel="noopener">
+                    View Proof <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Award item -->
+            <div class="accordion-item">
+              <button class="accordion-head" aria-expanded="false">
+                <span class="accordion-title">Top 5 Finalist INFEST Business Case Competition 2025</span>
+                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <p class="accordion-meta">Infest by KSEP ITB (National Level) · 2025</p>
+                  <p> Bakpao Merah Team </p>
+                  <a class="link-pill" href="https://drive.google.com/file/d/1AJ0WDBvTlW62xGQlR3Dj6GysuN1pxnV2/view?usp=sharing" target="_blank" rel="noopener">
+                    View Proof <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= CERTIFICATION POP-OUT ================= -->
+        <!-- EDIT / ADD certifications: copy one .accordion-item block and change the text + link. -->
+        <div class="popout" id="panel-certs" data-section="certs">
+          <div class="popout__inner">
+
+            <!-- Certification item -->
+            <div class="accordion-item">
+              <button class="accordion-head" aria-expanded="false">
+                <span class="accordion-title">Introduction to Artificial Intelligence</span>
+                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <p class="accordion-meta">Dicoding Academy · 2026</p>
+                  <!-- EDIT: certificate link -->
+                  <a class="link-pill" href="https://drive.google.com/file/d/1yFSBzBn3_w3vadW8hruOcDIZTzxRCeKI/view?usp=sharing" target="_blank" rel="noopener">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification item -->
+            <div class="accordion-item">
+              <button class="accordion-head" aria-expanded="false">
+                <span class="accordion-title">Machine Learning for Beginners</span>
+                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <p class="accordion-meta">Dicoding Academy · 2026</p>
+                  <a class="link-pill" href="https://drive.google.com/file/d/1r7V7SEaF3qHprMLDEsyOJjBz3DGI7jEO/view?usp=drive_link" target="_blank" rel="noopener">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification item -->
+            <div class="accordion-item">
+              <button class="accordion-head" aria-expanded="false">
+                <span class="accordion-title">Fundamentals of Data Analysis</span>
+                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <p class="accordion-meta">Dicoding Academy · 2026</p>
+                  <a class="link-pill" href="https://drive.google.com/file/d/1XRba_0S1cnNLNHLj_7XRWuFkJFBnxHgb/view?usp=drive_link" target="_blank" rel="noopener">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== PROJECTS PANEL ===================== -->
+      <div class="panel" id="panel-projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <!-- Project category tabs -->
+        <nav class="subtabs" aria-label="Project categories">
+          <button class="subtab is-active" data-cat="data">Data Analysis</button>
+          <button class="subtab" data-cat="consulting">Consulting Deck</button>
+          <button class="subtab" data-cat="research">Economic Research</button>
+        </nav>
+
+        <!-- ---------- Data Analysis ---------- -->
+        <div class="project-group is-active" data-group="data">
+          <div class="project-grid">
+            <!-- EDIT: project link via the href on each card -->
+            <div class="project-card">
+              <img src="assets/Air quality.png" alt="Air Quality Dashboard Cover" class="project-card__cover">
+
+              <h3>Air Quality Dashboard</h3>
+              <p>Dicoding Academy · 2026</p>
+              <p>
+              An interactive dashboard analyzing air quality metrics and pollution patterns across different regions of China
+              </p>
+
+              <div class="project-card__buttons">
+                <a class="project-card__cta" href="https://air-quality-dashboard-l8j4vtdbckwbg2lonh3p82.streamlit.app/" target="_blank" rel="noopener">
+                Open App <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a class="project-card__cta" href="https://github.com/connynaro/Air-Quality-Dashboard" target="_blank" rel="noopener">
+                View Code <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--<a class="project-card" href="#" target="_blank" rel="noopener">
+              <span class="project-card__icon"><i class="fa-solid fa-globe"></i></span>
+              <h3>FDI Sector Analysis</h3>
+              <p>Foreign direct investment trends across countries, industries, and time periods.</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a class="project-card" href="#" target="_blank" rel="noopener">
+              <span class="project-card__icon"><i class="fa-solid fa-chart-column"></i></span>
+              <h3>Market Data Visualization</h3>
+              <p>Turning market and economic datasets into clear charts and insight-driven summaries.</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a> -->
+          </div>
+        </div>
+
+        <!-- ---------- Consulting Deck ---------- -->
+        <div class="project-group" data-group="consulting">
+          <div class="project-grid">
+            <a class="project-card" href="https://drive.google.com/file/d/1Z9k-toO5xZBzptx1czpTOIupN5nzGeQ2/view?usp=drive_link" target="_blank" rel="noopener">
+              <img src="assets/Seravelle cover.jpg" alt="Seravelle Strategy Deck Cover" class="project-card__cover">
+              <h3>Seravelle Strategy Deck</h3>
+              <p>180 Degrees Consulting UGM (National Level) · 2026</p>
+              <p>Analyzing Seravelle’s brand positioning, target market, competitive landscape, and growth strategy</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a class="project-card" href="https://drive.google.com/file/d/1nB-DMPBtfmF3HTHU5ugfuLrAEP5Jmx55/view?usp=drive_link" target="_blank" rel="noopener">
+              <img src="assets/Sunsilk.jpg" alt="Sunsilk Strategy Deck Cover" class="project-card__cover">
+              <h3>Sunsilk Strategy Deck</h3>
+              <p>DWDG UGM (International Level) · 2026</p>
+              <p>Exploring consumer insights, brand relevance, market positioning, and growth recommendations for Sunsilk</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a class="project-card" href="https://drive.google.com/file/d/1U3kjhG51vGUFzGKF4bKT0vkHym07o4c_/view?usp=drive_link" target="_blank" rel="noopener">
+              <img src="assets/Kopitaloka.jpg" alt="Kopitaloka Strategy Deck Cover" class="project-card__cover">
+              <h3>Kopitaloka Strategy Deck</h3>
+              <p>Infest by KSEP ITB (National Level) · 2025</p>
+              <p>Improving brand relevance, customer engagement, and growth among Gen Z consumers</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a class="project-card" href="https://drive.google.com/file/d/10vhTeGFriyC83Mugb4plvh_WdhmgUJD2/view?usp=drive_link" target="_blank" rel="noopener">
+              <img src="assets/Timeshield.jpg" alt="Timeshield Strategy Deck Cover" class="project-card__cover">
+              <h3>Insurance Innovation Case</h3>
+              <p>NTU-Global Asia Insurance Partnership (National Level) · 2025</p>
+              <p>An insurance product concept for platform-based workers and delay-income protection</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ---------- Economic Research ---------- -->
+        <div class="project-group" data-group="research">
+          <div class="project-grid">
+            <a class="project-card" href="https://link.brights.id/brids/storage/40518/BRIDS-Weekly-Economic-&-Fixed-Income-Update-20250804_Shifting-Curves,-Diverging-Signals.pdf" target="_blank" rel="noopener">
+              <img src="assets/BRIDS.jpg" alt="BRIDS Weekly Economic Update Cover" class="project-card__cover">
+              <h3>Weekly Macro Recap</h3>
+              <p>BRIDS Internship</p>
+              <p>A concise brief on key economic indicators, market movements, and policy updates</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a class="project-card" href="https://drive.google.com/file/d/1eypj60y94ayRUNrg3ommOOobyYCmJ3lk/view" target="_blank" rel="noopener">
+              <img src="assets/Multifinance.jpg" alt="Multifinance Fixed Income Update Cover" class="project-card__cover">
+              <h3>Fixed Income Market Update</h3>
+              <p>BRIDS Internship</p>
+              <p>Bond yield movements, monetary policy expectations, and fixed income sentiment</p>
+              <span class="project-card__cta">Open <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <div class="project-card">
+              <span class="project-card__icon">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+              </span>
+
+                <h3>Economic Outlook and Research</h3>
+                <p>BRIDS Internship</p>
+                <p>
+                Analysis on Indonesia's investment and trade trends, including key sectors
+                and global market dynamics
+                </p>
+
+                <div class="project-card__buttons">
+                  <a class="project-card__cta" href="https://drive.google.com/file/d/1Jt_VCN84kWV6MKw9Tno8cjBTA3mLwcMB/view" target="_blank" rel="noopener">
+                  Indonesia Investment <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+
+                  <a class="project-card__cta" href="https://drive.google.com/file/d/1s0a7NiGWCmlHuqxM90v4FZ3G1zhmuFX5/view" target="_blank" rel="noopener">
+                  Global Trade Outlook <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <span class="project-card__icon">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+              </span>
+
+                <h3>Equity Research</h3>
+                <p>KSEP ITB</p>
+                <p>
+                Research report on United Tractors (UNTR) and contributed to weekly market updates covering key news and
+                index movements
+                </p>
+
+                <div class="project-card__buttons">
+                  <a class="project-card__cta" href="https://docs.google.com/document/d/1gnnf6rlhRW3iqOKdeXF8FHQ28uChH0evB_8dW0YBmco/edit?tab=t.0" target="_blank" rel="noopener">
+                  UNTR Research <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+
+                  <a class="project-card__cta" href="https://www.linkedin.com/posts/wmr-ugcPost-7091351665596891136-xJ3s/?utm_source=share&utm_medium=member_android" target="_blank" rel="noopener">
+                  Linkedin News <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+            </div>
+                
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===================== ADDITIONAL PANEL ===================== -->
+      <div class="panel" id="panel-additional">
+
+        <h2 class="section-title">Additional</h2>
+
+        <!-- ---------- CONTENT WRITING ---------- -->
+        <h3 class="additional-subhead"><i class="fa-solid fa-pen-nib"></i> Content Writing</h3>
+        <div class="additional-grid">
+
+          <!-- Card 1: LinkedIn Writing (3 link buttons) -->
+          <div class="project-card">
+            <span class="project-card__icon"><i class="fa-brands fa-linkedin"></i></span>
+            <h3>LinkedIn Writing</h3>
+            <div class="content-buttons">
+              <!-- EDIT: replace each href with a real LinkedIn post link -->
+              <a class="content-btn" href="https://www.linkedin.com/feed/update/urn:li:activity:7364974692077662209/" target="_blank" rel="noopener">Post 1</a>
+              <a class="content-btn" href="https://www.linkedin.com/posts/himatika-itb_himatika-itb-x-ugm-activity-7373883397888323584-qyK0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3rVggBhAlfe_yv_JBJTZn5TxK2h1GUTnM" target="_blank" rel="noopener">Post 2</a>
+              <a class="content-btn" href="https://www.linkedin.com/posts/himatika-itb_himatika-itb-people-alif-aqsha-activity-7391262914239717377-1WT8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3rVggBhAlfe_yv_JBJTZn5TxK2h1GUTnM" target="_blank" rel="noopener">Post 3</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Instagram Writing (2 link buttons) -->
+          <div class="project-card">
+            <span class="project-card__icon"><i class="fa-brands fa-instagram"></i></span>
+            <h3>Instagram Writing</h3>
+            <div class="content-buttons">
+              <!-- EDIT: replace each href with a real Instagram post link -->
+              <a class="content-btn" href="https://www.instagram.com/p/DNfVSu3P55X/?hl=en&img_index=1" target="_blank" rel="noopener">Post 1</a>
+              <a class="content-btn" href="https://www.instagram.com/p/DKtMu27Po24/?hl=en&img_index=1" target="_blank" rel="noopener">Post 2</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- CONTENT VIDEO ---------- -->
+        <h3 class="additional-subhead"><i class="fa-solid fa-clapperboard"></i> Content Video</h3>
+        <div class="additional-grid">
+
+          <!-- Card 1: Educational Video (2 link buttons) -->
+          <div class="project-card">
+            <span class="project-card__icon"><i class="fa-solid fa-video"></i></span>
+            <h3>Short Vlog Video</h3>
+            <div class="content-buttons">
+              <!-- EDIT: replace each href with a real educational video link -->
+              <a class="content-btn" href="https://drive.google.com/file/d/1-2ZPdgyLVgC-s0CxQs275s_UZytHcmbH/view?usp=sharing" target="_blank" rel="noopener">Video 1</a>
+              <a class="content-btn" href="https://drive.google.com/file/d/1-1u35Do6DZdSBHGoeC7P60tA9OIuyxvt/view?usp=drive_link" target="_blank" rel="noopener">Video 2</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Content Video (2 link buttons) -->
+          <div class="project-card">
+            <span class="project-card__icon"><i class="fa-brands fa-tiktok"></i></span>
+            <h3>Content Video</h3>
+            <div class="content-buttons">
+              <!-- EDIT: replace each href with a real TikTok video link -->
+              <a class="content-btn" href="https://www.instagram.com/reel/C42z_tsvRt1/?hl=en" target="_blank" rel="noopener">Video 1</a>
+              <a class="content-btn" href="https://www.tiktok.com/@himatikaitb/video/7408155406444285189" target="_blank" rel="noopener">Video 2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
